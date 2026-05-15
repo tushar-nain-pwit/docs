@@ -332,7 +332,7 @@ Run these curl commands. **Adjust `wait_for_completion` based on your dataset si
 ### 2a. Reindex `account_transactions`
 
 ```bash
-curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Content-Type: application/json' -d'
+curl -X POST "localhost:9200/_reindex?wait_for_completion=false&pretty" -H 'Content-Type: application/json' -d'
 {
   "source": { "index": "account_transactions" },
   "dest": { "index": "account_transactions_v2" }
@@ -343,7 +343,7 @@ curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Conte
 ### 2b. Reindex `call_units`
 
 ```bash
-curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Content-Type: application/json' -d'
+curl -X POST "localhost:9200/_reindex?wait_for_completion=false&pretty" -H 'Content-Type: application/json' -d'
 {
   "source": { "index": "call_units" },
   "dest": { "index": "call_units_v2" }
@@ -354,7 +354,7 @@ curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Conte
 ### 2c. Reindex `session_units`
 
 ```bash
-curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Content-Type: application/json' -d'
+curl -X POST "localhost:9200/_reindex?wait_for_completion=false&pretty" -H 'Content-Type: application/json' -d'
 {
   "source": { "index": "session_units" },
   "dest": { "index": "session_units_v2" }
@@ -365,7 +365,7 @@ curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Conte
 ### 2d. Reindex `template_units`
 
 ```bash
-curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Content-Type: application/json' -d'
+curl -X POST "localhost:9200/_reindex?wait_for_completion=false&pretty" -H 'Content-Type: application/json' -d'
 {
   "source": { "index": "template_units" },
   "dest": { "index": "template_units_v2" }
@@ -376,7 +376,7 @@ curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Conte
 ### 2e. Reindex `organization_transactions`
 
 ```bash
-curl -X POST "localhost:9200/_reindex?wait_for_completion=true&pretty" -H 'Content-Type: application/json' -d'
+curl -X POST "localhost:9200/_reindex?wait_for_completion=false&pretty" -H 'Content-Type: application/json' -d'
 {
   "source": { "index": "organization_transactions" },
   "dest": { "index": "organization_transactions_v2" }
