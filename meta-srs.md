@@ -1,4 +1,4 @@
-# Software Requirements Specification
+# Requirements Specification
 
 **Project:** Meta — Facebook Messenger Auto-Reply
 **Stack:** Laravel 13, PHP 8.3, PostgreSQL
